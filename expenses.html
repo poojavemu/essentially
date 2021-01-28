@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+
+	  // Load the Visualization API library and the piechart library.
+	  google.load('visualization', '1.0', {'packages':['corechart']});
+	  google.setOnLoadCallback(drawChart);
+	     // ... draw the chart...
+	</script>
+	<script type="text/javascript" src="expenses.js"></script>
+	
+	<!-- Your custom styles (optional) -->
+</head>
+<title>Expenses</title>
+<main>
+	<header>
+    	<div class="feature"></div>
+	</header>
+
+  	<div id="app">
+	    <header>
+	    	<div class="expensesRect" style="background-color: #37509A">
+	    		<a class="active" href="expenses.html" align="center">Expenses</a>
+	    	</div>
+	    	<div class="savingsRect">
+	    		<a href="savings.html">Savings</a>
+	    	</div>
+	    	<div class="wishlistRect">
+	    		<a href="wishlist.html">Wishlist</a>
+	    	</div>
+		</header>
+		<div id ="title" align="center" style="margin-top: 65px">Expenses</div>
+		<div id="piechart"> </div>
+		<div id="popup" style="display:none"></div>
+		<div id="updatepopup" style="display:none"></div>
+
+		<button id="addBTN"> Add Category </button>
+		<button id="updateBTN"> Update </button>
+    </div>
+
+    
+</main>
